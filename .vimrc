@@ -3,58 +3,59 @@ set nocompatible
 filetype off                   " required!
 
 " Vundle -- the hawtness
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " require Vundle itself (duh)
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 " git support within vim
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 
 " delimeter and symbol 'surrounding' tools
-Bundle 'tpope/vim-surround'
+Plugin 'tpope/vim-surround'
 
 " advanced repeat support for '.'; recommended for use with vim-surround
-Bundle 'tpope/vim-repeat'
+Plugin 'tpope/vim-repeat'
 
 " pairs of mappings to do/undo certain things, such as moving between buffers
-Bundle 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-unimpaired'
 
 " file browser
-Bundle 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 
 " commenting utility
-Bundle 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdcommenter'
 
 " something about syntax error detection
-Bundle 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 
 " ridiculously awesome fuzzy file lookup
-Bundle 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 
 " very cool cursor movement helper
-Bundle 'Lokaltog/vim-easymotion'
+Plugin 'Lokaltog/vim-easymotion'
 
 " ZenCoding, but better (can go up AND down DOM tree)
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " tab-completion based on current context
-Bundle 'ervandew/supertab'
+Plugin 'ervandew/supertab'
 
 " formatting for js
-Bundle 'pangloss/vim-javascript'
+Plugin 'pangloss/vim-javascript'
 
 " more js syntax options
-Bundle 'maksimr/vim-jsbeautify'
+Plugin 'maksimr/vim-jsbeautify'
 
 " 'zoom' the current window and restore
-Bundle 'ZoomWin'
+Plugin 'ZoomWin'
 
 " colorscheme
-Bundle 'molokai'
+Plugin 'molokai'
 
-filetype plugin indent on     " required!
+call vundle#end()
+filetype plugin indent on
 
 "
 " Brief help
