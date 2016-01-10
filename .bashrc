@@ -23,7 +23,14 @@ GIT_PROMPT_END=" \n${ResetColor}$ "
 
 GIT_PROMPT_SYMBOLS_BEHIND="↓"
 GIT_PROMPT_SYMBOLS_AHEAD="↑"
+GIT_PROMPT_CONFLICTS="${Red}✖"
+GIT_PROMPT_CHANGED="${Blue}✚"
 
 # Go go, bash git prompt!
-source ~/software/bash-git-prompt/gitprompt.sh
+#TODO: dotfiles should be dynamically determined...
+source ~/dotfiles/deps/bash-git-prompt/gitprompt.sh
 
+
+# Add ~/bin to PATH
+#TODO: Only if it isn't there already...
+PATH=$PATH:~/bin
